@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Control Items</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="CssPage.css"/>
+</head>
+<body>
+  <div class="topnav">
+    <a href="./LogIn.html">Log-Out</a>
+    <a href ="./ChangePassword.html">Change Password</a>
+    <a  href="./ItemAdmin.html">Home</a>
+    
+  </div>
+<table id="Item" style="width:50%">
+    <tr>
+      <th>Name</th>
+      <th>Price</th> 
+      <th>Availability</th> 
+    </tr>
+    <tr>
+      <td>Milk-1L</td>
+      <td>6</td> 
+      <td>Yes</td> 
+    </tr>
+    <tr>
+      <td>Eggs</td>
+      <td>20</td> 
+      <td>No</td> 
+    </tr>
+    <tr>
+      <td>Bread</td>
+      <td>4</td> 
+      <td>Yes</td> 
+    </tr>
+  </table>
+  <br>
+  <br>
+   <div class="tab">
+    Name:<input type="text" name="name" id="name"/>
+    Price:<input type="text" name="price"  id="price"/>
+    Availability:<input type="text" name="available"  id="available"/>
+  <button onclick="Addclick();">Add</button>
+  <button onclick="Ediclick();">Edit</button>
+  <button onclick="Delclick();">Delete</button>
+</div>
+</body>
+<script src="Admin.js"></script>
+</html>

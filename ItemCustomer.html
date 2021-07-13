@@ -1,0 +1,56 @@
+
+<!Doctype html>
+<html lang="en">
+<Title>Items</Title>
+<head>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="Customer.js"></script>
+<link rel="stylesheet" type="text/css" href="CssPage.css"/>
+</head>
+<body>
+    <div class = "search-box">
+      <input class="search-txt" id="search" name="search" onkeyup="search()" type = "text" placeholder="Type to search"/>
+    <a class="search-btn" href="ItemCustomer.html">
+    <i class="fas fa-search"></i></a>
+    </div>
+    <div class="topnav">
+      <a href="./ItemCustomer.html">Home</a>
+      <a href="./Welcome.html">Log-Out</a>
+    </div>
+<div class ="introduction">
+<em>
+In Kitchen Story, you will find a range of high quality basic food items <br>
+all at competitive prices.
+</em> 
+</div>
+  <table id="Item" style="width:50%">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th> 
+      <th>Availability</th>
+      <th>want to Buy?</th>    
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td id = "name1" >Milk-1L</td>
+        <td id = "price1" >6</td> 
+        <td>Yes</td> 
+        <td><button onclick="Buy('1')">Buy</button></td> 
+      </tr>
+      <tr>
+        <td id = "name">Eggs</td>
+        <td id = "price">20</td> 
+        <td>No</td> 
+      </tr>
+      <tr>
+        <td id = "name3">Bread</td>
+        <td id = "price3">4</td> 
+        <td>Yes</td> 
+        <td><button onclick="Buy('3')">Buy</button></td> 
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

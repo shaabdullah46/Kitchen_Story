@@ -1,0 +1,42 @@
+
+<!Doctype html>
+<html lang="en">
+<Title>Details Order and Payment</Title>
+<head>
+  <link rel="stylesheet" type="text/css" href="CssPage.css"/>
+</head>
+<body onload="data()">
+  <div class="topnav">
+    <a href="./ItemCustomer.html">Home</a>
+    <a href="./Welcome.html">Log-Out</a>
+  </div>
+  <div id = "order">
+  <b>  Your order is :</b>
+  <label for="name">Name:  </label>
+  <h2 id="nameproduct"></h2>
+  <label for="price">Price: </label>
+  <h2 id="priceproduct"></h2>
+  </div>
+  <hr>
+    <b>Payment: </b>
+    <form class="form">
+    <div class="pay">
+        <label for="name"><b>Card name:</b></label>
+        <input type="text" placeholder="Enter card hoder name" name="name" required>
+
+        <label for="numb"><b>Card Number:</b></label>
+        <input type="text" placeholder="Enter number" name="numb" required>
+
+        <label for="cvv"><b>CVV:</b></label>
+        <input type="password" placeholder="Enter CVV" name="cvv" required>
+
+        <label for="date"><b>Expiration Dates:</b></label>
+        <input type="date" name="date" required>
+    </div>
+</form>
+<button type="submit" onclick="next()">Next</button>
+</body>
+
+<script src="Customer.js"></script>
+
+</html>
